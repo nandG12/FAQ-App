@@ -1,0 +1,18 @@
+<div>
+  <div>
+    Add New FAQ
+  </div>
+  <div>
+    <form (submit)="addQuestion()">
+      <div>
+        <label for="text"> Question Text</label>
+        <input type="text" class ="form-control" [(ngModel)]="text" name="text">
+      </div>
+      <div>
+        <label for="text"> Question Answer</label>
+        <input type="text" class="form-control" [(ngModel)]="answer" name="answer">
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>
